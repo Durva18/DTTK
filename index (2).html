@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder by Location</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+   <header>
+        <h1>Find Colleges in Your Area</h1>
+        <form id="searchForm">
+            <input type="text" id="locationInput" placeholder="Enter a city name" required>
+            <button type="button" onclick="filterColleges()">Search</button>
+        </form>
+    </header>
+    
+    <main>
+   
+        <section id="collegeList">
+            <div class="college" data-location="Amravati">
+                <h2>Prof Ram Meghe Collage of Engineering And Management</h2>
+                <p>Location: Badnera,Amravati</p>
+                <p>Website: <a href="https://prmceam.ac.in">https://prmceam.ac.in</a></p>
+            </div>
+            <div class="college" data-location="Amravati">
+                <h2>Sipna Collage of Engineering And Technology</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://sipnaengg.ac.in">sipnaengg.ac.in</a></p>
+            </div>
+            <div class="college" data-location="Amravati">
+                <h2>P.R.Pote Collage of Engineering</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://prpotepatilengg.ac.in">prpotepatilengg.ac.in</a></p>
+            </div>
+            <div class="college" data-location="Amravati">
+                <h2>Dr. Rajendra Gode Collage of Engineering</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://www.drgitr.com">www.drgitr.comu</a></p>
+            </div>
+            <div class="college" data-location="Amravati">
+                <h2>Hanuman Vayayam Prasarak Mandal's Collage of Engineering & Technology</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://hvpmcoet.in">https://hvpmcoet.in</a></p>
+            </div>
+            <div class="college" data-location="Amravati">
+                <h2>Goverment Collage of Engineering</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://www.gcoea.ac.in">www.gcoea.ac.in</a></p>
+            </div>
+             <div class="college" data-location="Amravati">
+                <h2>Shri Shivaji Collage of Engineering</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://www.Shivajiscamt.org">www.Shivajiscamt.org</a></p>
+            </div>
+             <div class="college" data-location="Amravati">
+                <h2>Prof Ram Meghe Collage of Information And Technology</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://mitra.ac.in">mitra.ac.in</a></p>
+            </div>
+             <div class="college" data-location="Amravati">
+                <h2>G H Raisoni</h2>
+                <p>Location: Amravati</p>
+                <p>Website: <a href="https://www.ghru.edu.in">www.ghru.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Bharati Vidyapeeth College of engineeringi</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://bvcoe.bharatividyapeeth.edu">https://bvcoe.bharatividyapeeth.edu</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>MIT World Peace University (MIT-WPU)</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://mitwpu.edu.in">https://mitwpu.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Dr. D. Y. Patil Institute of Technology</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://engg.dypvp.edu.in">https://engg.dypvp.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Pimpri Chinchwad College Of Engineering</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="http://www.pccoepune.com">http://www.pccoepune.com</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>COEP Technological University</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://www.coep.org.in">https://www.coep.org.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Vishwakarma Institute of Technology</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://www.vit.edu.in">https://www.vit.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Symbiosis Institute of Technology Pune</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://www.sitpune.edu.in">https://www.sitpune.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>Sinhgad Academy of Engineering</h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="https://www.cms.sinhgad.edu.in">www.cms.sinhgad.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Pune">
+                <h2>JSPM Rajarshi Shahu College Of Engineering</h2></h2>
+                <p>Location: Pune</p>
+                <p>Website: <a href="http://www.jspmrscoe.edu.in/">http://www.jspmrscoe.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Akola">
+                <h2>College Of Engineering And Technology Akola </h2>
+                <p>Location: Akola</p>
+                <p>Website: <a href="https://www.coeta.ac.in">https://www.coeta.ac.in</a></p>
+            </div>
+            <div class="college" data-location="Nagpur">
+                <h2>G H Raisoni Nagpur</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://www.ghru.edu.in">www.ghru.edu.in</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>Shri Ramdeobaba College of Engineering and Management</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://www.rknec.edu">https://www.rknec.edu</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>Visvesvaraya National Institute of Technology (VNIT), Nagpur</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://vnit.ac.in">https://vnit.ac.in</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>Priyadarshini College of Engineering</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://www.pcenagpur.edu.in">https://www.pcenagpur.edu.in</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>St. Vincent Pallotti College of Engineering and Technology</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="http://www.kdkce.edu.in">https://http://www.kdkce.edu.in</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>Karmaveer Dadasaheb Kannamwar Engineering College</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://www.ghru.edu.in">www.ghru.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Nagpur">
+                <h2>Government College of Engineering Nagpur</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://www.gcoen.ac.in">gcoen.ac.in.in</a></p>
+            </div>
+             <div class="college" data-location="Nagpur">
+                <h2>Pune Institute of Computer Technology</h2>
+                <p>Location: Nagpur</p>
+                <p>Website: <a href="https://pict.edu">https://https://pict.edu</a></p>
+            </div>
+            <div class="college" data-location="Nashik">
+                <h2>k k wagh college of engineering</h2>
+                <p>Location: Nashik</p>
+                <p>Website: <a href="https://www.kkwagh.edu.in">https://www.kkwagh.edu.in</a></p>
+            </div>
+            <div class="college" data-location="Nashik">
+                <h2>Loknete Gopinathji Munde Institute of Engineering Education & Research</h2>
+                <p>Location: Nashik</p>
+                <p>Website: <a href="http://logmieer.com">http://logmieer.com</a></p>
+            </div>
+            <div class="college" data-location="Nashik">
+                <h2> Vidyarthi Griha's College Puneof Engineering & S. S. Dhamankar Institute of Management, Nashik</h2>
+                <p>Location: Nashik</p>
+                <p>Website: <a href="http://pvgcoenashik.org">http://pvgcoenashik.org</a></p>
+            </div>
+            <div class="college" data-location="Mumbai">
+                <h2>Veermata Jijabai Technological Institute</h2>
+                <p>Location: Mumbai</p>
+                <p>Website: <a href="https://vjti.ac.in">https://vjti.ac.in</a></p>
+            </div>
+            
+            <div class="college" data-location="Mumbai">
+                <h2>Rajiv Gandhi Institute of Technology, Mumbai</h2>
+                <p>Location: Mumbai</p>
+                <p>Website: <a href="https://mctrgit.ac.in">https://mctrgit.ac.in</a></p>
+            </div>
+            
+            <div class="college" data-location="Mumbai">
+                <h2>Dwarkadas J Sanghvi College of Engineering</h2>
+                <p>Location: Mumbai</p>
+                <p>Website: <a href="https://www.djsce.ac.in">https://www.djsce.ac.in</a></p>
+            </div>
+            
+            <div class="college" data-location="Mumbai">
+                <h2>Pillai College of Engineering, New Panvel (Autonomous)</h2>
+                <p>Location: Mumbai</p>
+                <p>Website: <a href="https://pce.ac.in">https://pce.ac.in</a></a></p>
+            </div>
+            <div class="college" data-location="Mumbai">
+                <h2>vasantdada patil college of engineering</h2>
+                <p>Location: Mumbai</p>
+                <p>Website: <a href="https://pvpccoe.ac.in">https://pvpccoe.ac.in</a></a></p>
+            </div>
+            <div class="college" data-location="Shegoan">
+                <h2>Sant Gajanan Maharaj College of Engineering Shegaon</h2>
+                <p>Location: Shegoan</p>
+                <p>Website: <a href="https://ssgmce.ac.in">https://ssgmce.ac.in</a></a></p>
+            </div>
+            <div class="college" data-location="Shegoan">
+                <h2>Mauli College of Engineering & Technology</h2>
+                <p>Location: Shegoan</p>
+                <p>Website: <a href="https://mcoet.mauligroup.org">https://mcoet.mauligroup.org</a>
+             </div>
+            
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
